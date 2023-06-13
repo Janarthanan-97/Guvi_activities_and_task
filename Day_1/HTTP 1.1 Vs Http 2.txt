@@ -1,0 +1,24 @@
+HTTP 1.1 Vs HTTP 2
+
+At the end of this blog we will definitely have some basic idea about difference between HTTP 1.1 and HTTP 2. Before moving to the topic, let us know the basic details HTTP.
+
+	When we search any url in a web browser, your browser will send request to the server and server will send back the request date through Hypertext Transfer Protocol (HTTP). At the beginning of the internet era the data was transferred in the form of text and hyperlinks. Later on as the usage of internet becomes wider the date transfer become more larger the data transfer becomes more dynamic and heavy and also new data in the form of picture, videos audios were evolved. In order to accommodate the evolving data transfer the HTTP versions too evolved.
+
+HTTP 1.1
+	
+	HTTP 0.9 was the basic version of Hypertext Transfer Protocol which was introduced in the year 1991. As the time passes in 1997 HTTP 1.1 came in to picture with more advanced features than previous HTTP versions. The feature includes CORS and Keep alive, which helped the user to access information much faster than before.
+
+HTTP 2
+
+	Almost after 17 years a new version HTTP 2.0 entered in to the web world on 2015. This version resolved many problems that retards the faster data access faced by HTTP 1.1 user. In the below paragraph I wrote about some problems in HTTP 1.1 and how it is resolved in HTTP 2.0.
+
+HTTP 1.1 vs HTTP 2
+
+	In HTTP 1.1 the request data and reception of the incoming data is a step by step process. For an example in order to load a web page, the HTTP 1.1 client first send a request for HTML file from a server, the server will acknowledge the request and send HTML file to the receiver. After receiving the HTML file the client will sent another request for CSS file, the server will sent back CSS to client. The same procedure is followed for JS file and finally a web page is loaded. 
+	Were as in HTTP 2 allows multiplexing, in with the request data is sent as a stream of data and server will return the requested data as a stream. This enable the client faster access to data than HTTP 1.1.
+
+	The second problem faced by HTTP 1.1 user is that, every request data needs a header data which contains information such as cookies and catches. This makes the data transfer heavy. Where as in HTTP 2, Request data is separated from header data, hence header data is sent once and then many numbers of request data are transferred. This lightens the data transfer and increases the speed of data transfer.
+
+	Additionally HTTP 2 supports PUSH framework. In older version in order load a web page, separate request will be sent from the client for CSS, HTML and JS. On receiving the request server will send back those files separately to the client. HTTP 2 will push automatically all necessary data to the client on first request.
+
+	Lastly, as HTTP 2 is built upon HTTP 1.1 as a foundation, HTTP 1.1 server can able to deliver HTTP 2 data.
