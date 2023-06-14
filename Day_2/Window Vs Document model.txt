@@ -1,0 +1,24 @@
+Window Vs Document object
+
+    While loading a web page in our browser, we can see that page in our browser. To bring the page to our eyes, there were two objects works at back door. One is Window object and another is a document object.
+
+Window object
+
+    It is the first thing loaded into the browser. Window is a global object, which forms foundation for other object such as document object that loads into screen.
+
+    Window object has a properties and methods such as "length, open, close, resize etc..."
+
+    The property or method in a window can be accessed by the following notation
+        window.propertyname
+
+Document object
+
+    When an window is loaded, it sets space for document objects such as HTML file which loads on to the screen.
+
+   Document property includes "Title, URL, Cookies etc..."
+
+    Document object is a sub root of window object, which uses the screen property of window object such as screen height, width and loads on top of the window.
+
+
+
+
