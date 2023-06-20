@@ -1,0 +1,79 @@
+Print odd numbers in an array
+
+        let arr = [1,2,3,4,5,6,7,8,9]
+        let odd = () =>{
+            let temp= [];
+            for(let ind =0; ind<arr.length; ind++)
+            {
+                arr[ind]%2!=0 ? temp.push(arr[ind]) : 0;
+            }
+            console.log(temp);
+        }
+        odd();
+
+---------------------------------------------------------------
+Convert all the strings to title caps in a string array
+
+        let arr = ["ani", "sam", "joe"]
+        let titleCase = () => {
+            let temp= [];
+            for(let ind =0; ind<arr.length; ind++)
+            {
+            arr[ind]=arr[ind].substring(0,1).toUpperCase()+arr[ind].substring(1);
+            }
+            console.log(arr);
+        }
+        titleCase();
+
+
+---------------------------------------------------------------
+Sum of all numbers in an array
+
+        let arr = [1,2,3,4,5,6,7,8,9]
+        let sum = ()=> {
+            let temp = 0;
+            for(let ind =0; ind<arr.length; ind++)
+            {
+            temp +=arr[ind];
+            }
+            console.log(temp);
+        }
+        sum();
+
+---------------------------------------------------------------
+Return all the prime numbers in an array
+
+        let arr = [1,2,3,4,5,6,7,8,9]
+        let prime = ()=> {
+            let temp = [];
+            for(let a of arr)
+            {
+                let count=0;
+            for(let ind =0; ind<=a; ind++)
+            {
+                a==1 ? count=1 : 0;
+                a%ind==0 ? count++ : 0;
+            }
+            count==2 ? temp.push(a) : 0;
+        }
+        console.log(temp);
+        }
+        prime();
+
+---------------------------------------------------------------
+Return all the palindromes in an array
+
+        let arr =[121,111,123];
+        let reverseString = ()=>{
+            arr = arr.map(String);
+            let newArr=[];
+            let temp;
+            for(let e of arr)
+            {
+                temp=e.split("").reverse().join("");
+                e==temp ? newArr.push(e) : 0;
+            }
+            console.log(newArr);
+        }
+        reverseString();
+
