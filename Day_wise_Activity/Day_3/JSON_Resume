@@ -1,0 +1,9 @@
+let myJson = {
+    "Name": "Janarthanan",
+    "Age": 25,
+    "Career Objective": "To secure a challenging position where I can effectively contribute my technical skills",
+    "Skill Sets": ["c","Javascript"],
+    "Personality Traits": ["Solution seeker","Solution seeker","Team worker"],
+    "DOB": "13-September-1997",
+    "Qualification": "B. Tech (Bio-Technology)"
+}
