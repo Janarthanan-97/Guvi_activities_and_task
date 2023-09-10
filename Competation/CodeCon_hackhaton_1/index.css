@@ -1,0 +1,55 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#cardHolder{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 50px;
+    width: 100%;
+}
+#searchDiv{
+  
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#inputDiv{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#foodSearch{
+    width: 50%;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 5px;
+   
+}
+
+#displayContainer{
+
+  position:fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 2;
+  cursor: pointer;
+  color: white;
+}
+#closeDiv{
+    text-align: right;
+}
+li{
+    list-style: none;
+}
