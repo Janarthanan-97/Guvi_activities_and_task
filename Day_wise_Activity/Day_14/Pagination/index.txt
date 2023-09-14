@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <div id = "mainBox">
+        <!-- Page number container -->
+        <div id="pageNumberContainer">
+            <div class="firstNext"><para>First</para></div>
+            <div class="firstNext"><para>Next</para></div>
+        </div>
+        
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+#mainBox{
+    border: 2px solid black;
+    height: 200px;
+    background-color: rgb(240, 243, 246);
+    display: grid;
+    justify-content: center;
+    align-content: end;
+
+}
+#pageNumberContainer{
+    border: 2px solid black;
+    height: 20px;
+    width: 80%;
+    display: flex;
+}
+.firstNext{
+    border: 2px solid blue;
+    height: 20px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.pageNumber{
+    border: 2px solid black;
+    height: 20px;
+    width: 30px;
+}
+
+
+
+
+
+let xhr = new XMLHttpRequest();
+xhr.open("GET", "https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json");
+xhr.onload = function(){
+    let pageData = JSON.parse(this.responseText); 
+    console.log(pageData);
+    
+    let pageNumberContainer = document.getElementById("pageNumberContainer")
+    for(number of pageData){
+        let pageNumber = document.createElement("div");
+        pageNumber.className = "ageNumber"
+        pageNumber.innerHTML=number.id;
+        pageNumberContainer.appendChild(pageNumber);
+        
+
+
+    }
+    
+}
+
+
+xhr.send();
+
+
+
+
+

@@ -1,0 +1,74 @@
+
+body{
+  display: flex;
+  justify-content: center;
+}
+#container
+  {
+    border: 2px solid black;
+    height: 200px;
+    width: 70%;
+  }
+  #pageInfo
+  {
+    height: 175px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 186, 247);
+
+  }
+  #pageContainer{
+    background-color: rgb(186, 186, 247);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50px 75px 300px;
+    grid-template-rows: 25px;
+    text-align: center;
+    gap: 2px;
+    color: white;
+    height: 25px;
+   
+  }
+ #pageNumbers
+  {
+    display: grid;
+    grid-template-columns: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+    grid-template-rows: 20px;
+    text-align: center;
+    gap: 2px;
+    overflow: hidden;
+  }
+  .pageNumber
+  {
+    /* border: 2px solid black; */
+    background-color: #000080;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+  }
+  a:hover, .pageNumber:hover{
+    scale: 1.05;
+    background-color: #f3f2f2cc;
+    box-shadow: 0.5px .5px #f3f2f2cc;
+    border-radius: 8px;
+    color: #000080;
+    transition: 0.3s;
+  }
+  .activePage
+  {
+    scale: 1.05;
+    background-color: #f3f2f2cc;
+    color:#000080;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+   
+
+  }
+ 

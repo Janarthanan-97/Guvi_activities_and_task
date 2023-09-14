@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <form id="form">
+        <div id="nameDiv" class="divContainer">
+            <div id="firstNameDiv"><label>First Name</label><input id="firstNameInput" type="text" placeholder="First Name"></div>
+            <div id="lastNameDiv"><label>Last Name:</label><input id="lastNameInput" type="text" placeholder="Last name"></div>
+        </div>
+        <div id="genderDiv" class="divContainer">
+            <label>Gender:</label>
+            <div id="maleDiv"><input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label></div>
+            <div id="femaleDiv"><input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label></div>
+        </div>
+        <div id="addressDiv" class="divContainer">
+            <div id="addressLineDiv">
+                <label>Address:</label><input id="addressLineInput">
+            </div>
+            <div id="countryDiv">
+                <label>Country:</label>
+                <select id="countrySelect" onchange="getSelectedValue()"><option>--select country--</option></select>
+            </div>
+            <div id="stateDiv">
+                <label>State:</label>
+                <select id="stateSelect">
+                    <option>--select state--</option>
+                    
+                </select>
+            </div>
+            <div id="pinDiv">
+                <label>PIN Code:</label>
+                <input id="pinInput" type="text">
+            </div>
+            
+        </div>
+        <div id="foodDiv" class="divContainer">
+            <p>Select food</p>
+            <div><input type="checkbox" id="southIndianFood" name = "foodType" value="South Indian">
+                <label for="southIndianFood">South Indian</label></div>
+
+            <div><input type="checkbox" id="northIndianFood" name = "foodType" value="North Indian">
+                <label for="northIndianFood">North Indian</label>
+            </div>
+
+           <div>
+            <input type="checkbox" id="chineseFood" name = "foodType" value="Chinese">
+            <label for="chineseFood">Chinese</label>
+           </div>
+
+
+            <div>
+                <input type="checkbox" id="westernFood" name = "foodType" value="Western">
+            <label for="westernFood">Western</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="mixedFood" name = "foodType" value="Mixed">
+            <label for="mixedFood">Mixed</label>
+            </div>
+        </div>
+        
+            <button type="submit" form="form" onclick="onSubmit()">Submit</button>
+    
+    </form>
+    <table id="displayTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>PIN</th>
+            <th>Food</th>
+        </tr>
+    </table>
+    
+    <script src="index.js"></script>
+</body>
+</html>
