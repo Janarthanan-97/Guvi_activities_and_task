@@ -1,0 +1,16 @@
+.search-list > ul > li:hover {
+    background-color: rgba(33, 37, 41, 0.1);
+}
+
+.search-list > ul > li {
+    list-style-type: none;
+    padding-left: 1rem;
+    background-color: white;
+    border-radius: 5px; 
+}
+.search-list > ul {
+   border-left: 1px solid #33333320;
+   border-right: 1px solid #33333320;
+   border-bottom: 3px solid #33333320;
+    border-radius: 5px;     
+}
